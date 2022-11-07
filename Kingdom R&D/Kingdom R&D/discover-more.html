@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover more</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #151515;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0vw 3vw;
+            height: 6vw;
+            position: fixed;
+            top: 0;
+            width: 94vw;
+        }
+        
+        .brand {
+            display: flex;
+            flex-direction: row;
+            font-size: 3vw;
+            color: gray;
+            font-weight: 700;
+        }
+        
+        .menu {
+            display: flex;
+        }
+        
+        .menu li a {
+            padding: 2vw 2vw;
+            border-radius: 10px;
+        }
+
+        header .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5vw;
+        }
+        
+        header .menu li {
+            list-style: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        header .menu li:hover {
+            background-color: gray;
+            border-radius: 10px;
+            transition: all ease-in-out 0.5s;
+        }
+        
+        .openingword {
+            color: white;
+            text-align: center;
+            margin-top: 17.5vw;
+            margin-bottom: 17.5vw;
+            margin-left: 16vw;
+            margin-right: 16vw;
+            font-size: 3.5vw;
+            padding-top: 5vw;
+        }
+        
+        .title {
+            color: white;
+            text-align: center;
+            font-size: 4vw;
+        }
+        
+        .paragraph {
+            font-size: 1.5vw;
+            color: white;
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+        
+        .font1 {
+            text-align: right;
+            font-size: 4vw;
+            color: white;
+        }
+        
+        .font2 {
+            font-size: 1.5vw;
+            color: white;
+            margin-right: 2vw;
+        }
+        
+        img {
+            width: 30vw;
+            height: 30vw;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .openingword {
+                margin-top: 77vw;
+                margin-bottom: 77vw;
+                font-size: 5vw;
+            }
+        
+            .title {
+                font-size: 7vw;
+            }
+        
+            .paragraph {
+                font-size: 3vw;
+            }
+        
+            .font1 {
+                font-size: 4.5vw;
+            }
+        
+            .font2 {
+                font-size: 3vw;
+                margin-left: 48vw;
+            }
+        
+            img {
+                width: 40vw;
+                height: 40vw;
+            }
+        }
+        
+        @media screen and (max-width: 912px) and (min-width: 480px) {
+            .openingword {
+                margin-top: 60vw;
+                margin-bottom: 60vw;
+                font-size: 5vw;
+            }
+        
+            .title {
+                font-size: 7vw;
+            }
+        
+            .paragraph {
+                font-size: 3vw;
+            }
+        
+            .font1 {
+                font-size: 4.5vw;
+            }
+        
+            .font2 {
+                font-size: 3vw;
+                margin-left: 48vw;
+            }
+        
+            img {
+                width: 40vw;
+                height: 40vw;
+            }
+        }
+    </style>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myheader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+    </script>
+</head>
+<body bgcolor="#151515">
+    <header class="myheader">
+        <div class="brand">
+            <p>KINGDOM R&D</p>
+        </div>
+        <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="">Our Social</a></li>
+        </ul>
+    </header>
+   <h1 class="openingword">We are here to make innovation to purpose make our live more better.</h1>
+   <h1 class="title" style="margin-bottom: 5vw">What is Kingdom R&D</h1>
+   <p class="paragraph">What is Kingdom R&D, Some people asking that question. so let us explain</p>
+   <p class="paragraph">Kingdom R&D or you can call Kingdom Research and Devepoment is an organization founded by Kingdom.co.</p>
+   <p class="paragraph" style="margin-bottom: 20vw;">Kingdom R&D researching and developing Radianite to make new innovation which can make our life more better.</p>
+   <h1 class="title" style="margin-bottom: 5vw;">Our Innovation</h1>
+   <!--radicore-->
+   <h1 class="font1" style="text-align: justify;"><img src="radi core.png" style="float: left; margin-left: 4vw; margin-right: 4vw;">Radi Core</h1>
+   <p class="font2" style="margin-bottom: 4vw;">Radi Core or you can call Radianite Core is fuel for a Radianite Object to make it work. A Radi-Core can be super-heated to liquefy the radianite inside, which will cause it to generate even more power.</p>
+   <p class="font2" style="margin-bottom: 20vw;">Radi Core used in smaller Radianite device such as a Radianite Powered Personal Computer, a Radianite Powered Generator, a Single Radianite Powered Server</p>
+   <!--radianitepowerplant-->
+   <h1 class="font1" style="text-align: justify;"><img src="radianite power plant.png" style="float: left; margin-left: 4vw; margin-right: 4vw;">Radianite Power Plant</h1>
+   <p class="font2" style="margin-bottom: 4vw;">Radianite Power Plant is most cleanest power plant, renewable, and dont make any polution.</p>
+   <p class="font2" style="margin-bottom: 20vw;">This Radianite Power Plant making the most biggest electric enery in the world. with single Radianite Power Plant can make electricity for one city and Radianite Power Plant replace dirty power plant and unefficient power plant.</p>
+   <!--radianitepoweredsupercomputer-->
+   <h1 class="font1" style="text-align: initial;"><img src="radianite powered super computer.png" style="float: left; margin-left: 4vw; margin-right: 4vw;">Radianite Powered Super Computer</h1>
+   <p class="font2" style="margin-bottom: 4vw;">Radianite Powered Super Computer is the most fastest computer powered by just a single Radi Core.</p>
+   <p class="font2" style="margin-bottom: 20vw;">This Radianite Powered Super Computer is 50 times faster than conventional super computer. This Radianite Powered Super Computer make the most accurate calculation than another super computer and this super computer power saving than another conventional super computer.</p>
+</body>
+</html>
