@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom R&D</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-repeat: none;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 30%;
+        }
+
+        header {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0vw 3vw;
+            height: 6vw;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            font-size: 3vw;
+            color: gray;
+            font-weight: 700;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li a {
+            padding: 2vw 2vw;
+        }
+
+        header .menu li a {
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5vw;
+        }
+
+        header .menu li {
+            list-style: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        header .menu li:hover {
+            background-color: gray;
+            border-radius: 10px;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .font {
+            color: white;
+            margin-top: 12vw;
+            margin-left: 2vw;
+            font-size: 3.5vw;
+            text-shadow: 0 0 3px black;
+        }
+
+        .button {
+            display: block;
+            background-color: transparent;
+            border: 0.25vw solid white;
+            box-shadow: 0 0 3px black;
+            width: 19vw;
+            height: 5vw;
+            text-decoration: none;
+            text-align: center;
+            line-height: 5vw;
+            color: white;
+            margin-left: 2vw;
+            font-weight: 700;
+            font-size: 2.5vw;
+            margin-top: 0px;
+            text-shadow: 0 0 3px black;
+        }
+
+        .button:hover {
+            background-color: gray;
+            transition: all ease-in-out 0.5s;
+        }
+
+        @media screen and (max-width: 480px) {
+            .font {
+                margin-top: 73vw;
+                margin-right: 28vw;
+                font-size: 6vw;
+            }
+
+            .button {
+                width: 30vw;
+                height: 8vw;
+                line-height: 8vw;
+                font-size: 4vw;
+            }
+        }
+
+        @media screen and (max-width: 1024px) and (min-widtH: 480px) {
+            .font {
+                margin-top: 50vw;
+                margin-right: 28vw;
+                font-size: 6vw;
+            }
+
+            .button {
+                width: 30vw;
+                height: 8vw;
+                line-height: 8vw;
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body background="background.png">
+    <header>
+        <div class="brand">
+            <p>KINGDOM R&D</p>
+        </div>
+        <ul class="menu">
+        <li><a href="">Our Social</a></li>
+        </ul>
+    </header>
+    <h1 class="font">Kingdom R&D make new<br>innovation to make<br>life easier</h1>
+    <a class="button" href="discover-more.html">Discover more</a>
+</body>
+</html>
